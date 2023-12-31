@@ -133,3 +133,5 @@ export PATH="$PATH:/opt/mssql-tools18/bin"
 alias lss='ls'
 alias ls='colorls --sd -A'
 # source "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+export TERM=xterm-256color
