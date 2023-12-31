@@ -80,7 +80,8 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
     git
     colorize
-    zsh-autosuggestions  # installed manually via source
+    zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
