@@ -78,6 +78,8 @@ else
     echo "oh-my-zsh already installed."
 fi
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm >/dev/null 2>&1
+
 echo "Installing zsh plugins..."
 declare -A plugins_to_clone=(
     ["romkatv/powerlevel10k"]="themes/powerlevel10k"
@@ -112,6 +114,7 @@ declare -A files_to_link=(
     ["$HOME/.zshrc"]="$HOME/dotfiles/.zshrc"
     ["$HOME/.p10k.zsh"]="$HOME/dotfiles/.p10k.zsh"
     ["$HOME/.nanorc"]="$HOME/dotfiles/.nanorc"
+    ["$HOME/.tmux.conf"]="$HOME/dotfiles/.tmux.conf"
 )
 
 for LINK_NAME in "${!files_to_link[@]}"; do
