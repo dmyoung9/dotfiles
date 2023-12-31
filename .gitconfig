@@ -22,3 +22,5 @@
     colorMoved = default
 [alias]
     dog = log --decorate --oneline --graph --pretty=format:'%C(auto)%h%d %C(reset)%s %C(bold blue)%ce %C(reset)%C(green)%cr (%cd)'
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
