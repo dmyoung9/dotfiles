@@ -3,10 +3,16 @@ set tabstospaces
 set autoindent
 set trimblanks
 set linenumbers
-set constantshow
-set titlecolor white,red
+set softwrap
+set stateflags
+# set constantshow
+set titlecolor red
 set keycolor cyan
 set functioncolor cyan
 set numbercolor yellow
-set mouse
+# set mouse
+set emptyline
+set smarthome
 set zap  # allows deleting under cursor!
+# set guidestripe 80
+set indicator
