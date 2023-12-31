@@ -77,7 +77,11 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize zsh-autosuggestions)
+plugins=(
+    git
+    colorize
+    zsh-autosuggestions  # installed manually via source
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,7 +129,6 @@ TZ='America/Los_Angeles'; export TZ
 ZSH_COLORIZE_STYLE="github-dark"
 export PATH="$PATH:/opt/mssql-tools18/bin"
 
-alias config='/usr/bin/git --git-dir=/home/davidyoung/.cfg/ --work-tree=/home/davidyoung'
 alias lss='ls'
 alias ls='colorls --sd -A'
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
