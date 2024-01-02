@@ -134,4 +134,6 @@ alias lss='ls'
 alias ls='colorls --sd -A'
 # source "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
+alias synctime='sudo hwclock -s && sudo ntpdate ntp.ubuntu.com'
+
 export TERM=xterm-256color
